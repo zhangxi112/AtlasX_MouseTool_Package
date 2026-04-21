@@ -1,0 +1,54 @@
+﻿{
+  "version": "1.0",
+  "app_state": {
+    "current_theme": {
+      "theme_id": "system_default",
+      "theme_name": "系统默认",
+      "source": "system",
+      "cursor_path": null,
+      "hotspot_x": 0,
+      "hotspot_y": 0
+    },
+    "recent_custom_cursors": [],
+    "builtin_theme_palettes": {}
+  },
+  "appearance": {
+    "theme_mode": "dark"
+  },
+  "highlight": {
+    "enabled": true,
+    "duration_ms": 1500,
+    "ring_size": 220,
+    "multi_monitor": true,
+    "hotkey": "F8"
+  },
+  "pointer": {
+    "cursor_size_percent": 120,
+    "shake_to_find_enabled": true,
+    "shake_distance_threshold": 360,
+    "shake_cooldown_ms": 1200,
+    "trail_style": "glow",
+    "trail_color": "#22C55E"
+  },
+  "click_ripple": {
+    "enabled": true,
+    "duration_ms": 650,
+    "size": 120
+  },
+  "dynamic_cursor": {
+    "enabled": false,
+    "frame_interval_ms": 180
+  },
+  "app_switch": {
+    "enabled": false,
+    "poll_interval_ms": 1200,
+    "rules": []
+  },
+  "game_mode": {
+    "auto_disable_enhancements": true
+  },
+  "startup": {
+    "launch_at_startup": false
+  }
+}
+

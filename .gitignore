@@ -1,0 +1,36 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+.buildvenv/
+
+# Test and tool caches
+.pytest_cache/
+.pytest_tmp/
+pytest-cache-files-*/
+.mypy_cache/
+
+# Build outputs
+build/
+dist/
+release/
+*.spec.bak
+
+# Runtime-generated files
+configs/runtime/
+rendered/
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+
+# Local/private root documents
+Atlas Cursor Studio_*.docx
+Codex_*.txt
+README_*.txt
+
+# Internal application materials
+docs/softcopyright_notes.md
