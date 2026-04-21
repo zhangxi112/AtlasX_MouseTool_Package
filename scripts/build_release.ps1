@@ -10,6 +10,7 @@ $distDir = Join-Path $root "dist\AtlasXCursorStudio"
 $releaseDir = Join-Path $root "release"
 $portableZip = Join-Path $releaseDir "AtlasXCursorStudio-portable.zip"
 $installerScript = Join-Path $PSScriptRoot "installer.iss"
+$installerPath = Join-Path $releaseDir "AtlasXCursorStudio-Setup-1.0.exe"
 
 Write-Host "Building Atlas-X Cursor Studio release..."
 $buildScript = Join-Path $PSScriptRoot "build.ps1"
@@ -31,6 +32,9 @@ if (-not $SkipPortableZip) {
     }
     Write-Host "Creating portable package: $portableZip"
     Compress-Archive -Path (Join-Path $distDir '*') -DestinationPath $portableZip -CompressionLevel Optimal
+    if (-not (Test-Path $portableZip)) {
+        throw "Portable package was not created: $portableZip"
+    }
 }
 
 if ($SkipInstaller) {
@@ -55,4 +59,10 @@ if (-not $isccCandidates) {
 $iscc = $isccCandidates[0]
 Write-Host "Building installer with Inno Setup: $iscc"
 & $iscc $installerScript
+if (-not (Test-Path $installerPath)) {
+    throw "Installer build finished but expected output was not found: $installerPath"
+}
+
 Write-Host "Installer build complete. Output directory: release"
+Write-Host "Portable package: $portableZip"
+Write-Host "Installer package: $installerPath"

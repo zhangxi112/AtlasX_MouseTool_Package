@@ -33,15 +33,14 @@
 - [ ] `scripts/build.ps1` 可执行
 - [ ] `atlas_cursor_studio.spec` 可生成产物
 - [ ] `dist\\AtlasXCursorStudio\\AtlasXCursorStudio.exe` 可启动
+- [ ] `scripts\\build_release.ps1` 可生成完整发布包
+- [ ] `release\\AtlasXCursorStudio-portable.zip` 已生成
+- [ ] `release\\AtlasXCursorStudio-Setup-1.0.exe` 已生成
 - [ ] 发布目录包含必要 DLL 和资源文件
 - [ ] 首次抠图时模型下载行为符合预期
 
 ## 文档
 
 - [ ] README 可指导他人完成安装和运行
-- [ ] 软著说明文档内容完整
+- [ ] 发布指南可指导打包、上传和回归检查
 - [ ] 已实现功能说明与实际行为一致
-
-
-- [ ] ?????????????????????
-- [ ] ??????????????????????
