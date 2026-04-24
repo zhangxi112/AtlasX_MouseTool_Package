@@ -189,7 +189,7 @@ class TrayHotkeyManager(QObject):
             self.logger.info("Registered global hotkey: %s", self.hotkey_sequence)
         except Exception as exc:
             self.logger.exception("Failed to register global hotkey: %s", exc)
-            show_warning(self.window, getattr(self.window.context.config.appearance, "theme_mode", "dark"), APP_NAME, f"??????????{self.hotkey_sequence}\n{exc}")
+            show_warning(self.window, getattr(self.window.context.config.appearance, "theme_mode", "dark"), APP_NAME, f"注册全局快捷键失败：{self.hotkey_sequence}\n{exc}")
 
     def _unregister_hotkey(self) -> None:
         if not hasattr(ctypes, "windll"):
