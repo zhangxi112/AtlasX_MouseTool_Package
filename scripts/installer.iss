@@ -1,6 +1,6 @@
 ﻿#define AppName "Atlas-X Cursor Studio"
 #define AppVersion "1.0"
-#define AppPublisher "Atlas-X Lab"
+#define AppPublisher "张希"
 #define AppExeName "AtlasXCursorStudio.exe"
 #define AppId "AtlasXCursorStudio"
 #define DistDir "..\\dist\\AtlasXCursorStudio"

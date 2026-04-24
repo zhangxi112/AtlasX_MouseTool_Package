@@ -44,3 +44,21 @@
 - [ ] README 可指导他人完成安装和运行
 - [ ] 发布指南可指导打包、上传和回归检查
 - [ ] 已实现功能说明与实际行为一致
+
+
+## 软著与权属
+
+- [ ] README、LICENSE、Release 文案中的著作权人均为张希
+- [ ] 软件正式产品名称均为 Atlas-X Cursor Studio
+- [ ] 软著登记全称均为 Atlas-X Cursor Studio 鼠标指针自定义工具软件 V1.0
+- [ ] GitHub 仓库首页截图已保存
+- [ ] GitHub 提交记录截图已保存
+- [ ] GitHub Release 页面截图已保存
+- [ ] GitHub LICENSE 页面截图已保存
+- [ ] `assets/app_icon.ico` 已按项目生成资产记录
+- [ ] `assets/builtin_cursors` 下 png/cur 已按项目生成资产记录
+
+- [ ] 发布包包含 `THIRD_PARTY_NOTICES.md`
+- [ ] 发布包包含 `licenses` 目录
+- [ ] `licenses` 目录包含 LGPL-3.0、GPL-3.0、PySide6/Qt for Python 和 Qt 第三方许可说明
+- [ ] README 和软件关于页包含 PySide6 / Qt for Python LGPLv3 路径说明

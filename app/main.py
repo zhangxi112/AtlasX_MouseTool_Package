@@ -48,7 +48,7 @@ def main() -> int:
     context = bootstrap_app()
     app = QApplication(sys.argv)
     app.setApplicationName(APP_NAME)
-    app.setOrganizationName("Atlas-X Lab")
+    app.setOrganizationName("张希")
     app.setQuitOnLastWindowClosed(False)
     apply_app_theme(app, context.config.appearance.theme_mode)
 

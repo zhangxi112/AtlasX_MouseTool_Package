@@ -632,6 +632,7 @@ class MainWindow(QMainWindow):
                     f"版本：{APP_VERSION}",
                     "技术栈：Python 3.11+ / PySide6 / pywin32 / Pillow / onnxruntime / JSON / PyInstaller",
                     "已实现：主窗口、托盘常驻、热键录制、内置主题切换、主题分部件配色、自定义图片导入、自动折图、热点设置、.cur 生成与应用、点击波纹、晃动尾迹提示、按程序切换主题、动态光标、全屏自动暂停增强、配置保存、日志。",
+                    "第三方组件：本软件使用 PySide6 / Qt for Python 构建桌面界面。PySide6 Community Edition 按 LGPLv3 路径使用。第三方组件许可证见项目 THIRD_PARTY_NOTICES.md 或发布包 licenses 目录。",
                     "说明：部分游戏或自行接管光标的程序仍可能覆盖系统光标应用结果。",
                 ]
             )

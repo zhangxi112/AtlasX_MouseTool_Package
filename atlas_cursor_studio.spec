@@ -6,6 +6,8 @@ project_root = Path.cwd()
 datas = [
     (str(project_root / "configs" / "default_config.json"), "configs"),
     (str(project_root / "assets"), "assets"),
+    (str(project_root / "THIRD_PARTY_NOTICES.md"), "."),
+    (str(project_root / "licenses"), "licenses"),
 ]
 
 hiddenimports = [
