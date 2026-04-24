@@ -1,1 +1,1 @@
-"""Atlas Cursor Studio application package."""
+"""Atlas-X Cursor Studio application package."""

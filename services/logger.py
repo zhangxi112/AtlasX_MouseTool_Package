@@ -1,4 +1,4 @@
-"""Logging configuration for Atlas Cursor Studio."""
+"""Logging configuration for Atlas-X Cursor Studio."""
 
 from __future__ import annotations
 

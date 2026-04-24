@@ -33,14 +33,21 @@ This file describes third-party components used by Atlas-X Cursor Studio. These 
 
 | Component | Purpose | License note |
 |---|---|---|
-| Pillow | Image loading, RGBA conversion, preview generation, and cursor image rendering | Pillow/HPND-style license; verify exact installed package metadata before release |
-| pywin32 | Windows integration helper dependency | PSF-style license; verify exact installed package metadata before release |
-| onnxruntime | Local ONNX inference used by the optional background removal pipeline | MIT; verify exact installed package metadata before release |
+| Pillow | Image loading, RGBA conversion, preview generation, and cursor image rendering | MIT-CMU/Pillow-style license; package metadata archived in `docs/dependency_metadata.txt` |
+| pywin32 | Windows integration helper dependency | PSF-style license; package metadata archived in `docs/dependency_metadata.txt` |
+| onnxruntime | Local ONNX inference used by the optional background removal pipeline | MIT; package metadata archived in `docs/dependency_metadata.txt` |
 | numpy | Numeric dependency used by image/model processing stack | BSD-style license; binary wheels may include additional notices such as OpenBLAS/GCC runtime exception |
 | PyInstaller | Build tool for Windows executable packaging | GPL with PyInstaller exception; used as a build tool, not as original application source |
-| pytest | Development and test dependency | MIT-style license; not required for normal end-user operation |
+| pytest | Development and test dependency | MIT-style license; package metadata archived in `docs/dependency_metadata.txt`; not required for normal end-user operation |
 | Inno Setup | Windows installer build tool | Inno Setup license; used as an external packaging tool |
 | Windows user32/winreg APIs | System cursor application, restore, hotkey/startup integration | Operating system APIs, not third-party source code |
+
+## Optional U2Net Model
+
+- Resource: `u2net.onnx`
+- Purpose: Optional runtime model used only when the automatic background removal feature is triggered.
+- Source in current code: `services/u2net_session.py` downloads from `https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx` and validates MD5 `60024c5c889badc19c04ad937298a77b`.
+- Copyright boundary: The model file is a third-party optional runtime resource. It is not part of 张希's original source code and is not included in software copyright source identification materials.
 
 ## Project Assets
 
